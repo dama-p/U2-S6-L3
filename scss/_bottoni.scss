@@ -1,0 +1,20 @@
+$buttons-map: (
+    blue: $blue,
+    orange: $orange,
+    green: $green,
+);
+
+@each $color, $value in $buttons-map {
+   .button-#{$color} {
+    background-color: $value;
+    color: $white;
+    display: inline-block;
+    padding: 1em;
+    margin-inline-end: 1em;
+    border: none;
+    &:hover {
+        background-color: $white;
+        color: $purple;
+    }
+}
+}

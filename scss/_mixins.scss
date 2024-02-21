@@ -1,0 +1,14 @@
+
+@mixin headings {
+font-family: $font-secondary;
+font-size: 12px;
+letter-spacing: 0.5em;
+text-transform: uppercase;
+color: $white;
+}
+
+@mixin floating { 
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -6px rgba(0,0,20,0.8);
+    border: 5px solid #9fcbd0;
+}

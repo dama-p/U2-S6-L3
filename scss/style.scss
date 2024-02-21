@@ -1,0 +1,80 @@
+@import 'reset';
+
+@import 'colori';
+
+@import 'font';
+
+@import 'spaziature';
+
+@import 'bottoni';
+
+@import 'mixins';
+
+@import 'animazioni';
+
+
+body {
+    background-color: #23166f;
+    font-family: $font-primary;
+    color: $white;
+    font-size:  $font-size-main;
+}
+
+nav {
+    background-color: $white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: lowercase;
+    @include headings;
+    font-size: $font-size-h3;
+    padding: 1em;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.hero {
+    background-color: $purple;
+    display: flex;
+}
+
+
+h1 {
+    @include headings;
+    font-size: $font-size-h1;
+}
+
+.img-container {
+    width: 50%;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.img-container img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
+
+.title-container {
+    max-width: 50%;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    max-width: 50%;
+}
+
+
+.neon-images img {
+    max-width: 400px;
+    aspect-ratio: 4 / 3;
+    margin: 1em;
+    @include floating;
+}
+
