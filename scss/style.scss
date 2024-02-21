@@ -44,6 +44,11 @@ nav a {
 h1 {
     @include headings;
     font-size: $font-size-h1;
+    @include fadeInAnimation;
+}
+
+p {
+    @include fadeInAnimation;
 }
 
 .img-container {
@@ -68,6 +73,7 @@ h1 {
     gap: 10px;
     justify-content: center;
     max-width: 50%;
+    @include fadeInAnimation;
 }
 
 
@@ -77,4 +83,3 @@ h1 {
     margin: 1em;
     @include floating;
 }
-

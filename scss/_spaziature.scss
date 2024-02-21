@@ -34,3 +34,38 @@ $sizes-map: (
     }
     
 }
+
+
+/* 
+
+OPPURE, METODO ALTERNATIVO
+
+$spacing-values: (
+  xs: 10px,
+  sm: 12px,
+  normal: 16px,
+  lg: 24px,
+  xl: 32px,
+  xxl: 48px,
+);
+
+$directions: "inline", "block";
+
+@each $axis in $directions {
+  @each $size, $value in $spacing-values {
+    .padding-#{$size} {
+      padding: value;
+    }
+    .margin-#{$size} {
+      margin: value;
+    }
+    .margin-#{$axis}-#{$size} {
+      margin-#{$axis}: $value;
+    }
+    .padding-#{$axis}-#{$size} {
+      padding-#{$axis}: $value;
+    }
+    
+  }
+}
+ */
